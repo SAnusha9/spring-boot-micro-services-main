@@ -1,0 +1,11 @@
+package snippet;
+
+public class Snippet {
+	spring:
+	  application:
+	    name: department-service  # Must match the filename in config server
+	  config:
+	    import: optional:configserver:http://localhost:8088
+	
+}
+

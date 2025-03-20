@@ -1,0 +1,390 @@
+{
+	"info": {
+		"_postman_id": "977e0769-387b-44c5-8ce2-4df50efe74f1",
+		"name": "SB_Emp_Dept_Services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40820350"
+	},
+	"item": [
+		{
+			"name": "config_server",
+			"item": [
+				{
+					"name": "http://localhost:8088/department-service/default",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8088/department-service/default",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"department-service",
+								"default"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8088/department-service/default",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8088/department-service/default",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"department-service",
+								"default"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8088/employee-service/default",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8088/employee-service/default",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"employee-service",
+								"default"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "API_Gateway",
+			"item": [
+				{
+					"name": "http://host.docker.internal:8060/employee",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://host.docker.internal:8060/employee",
+							"protocol": "http",
+							"host": [
+								"host",
+								"docker",
+								"internal"
+							],
+							"port": "8060",
+							"path": [
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://host.docker.internal:8060/employee",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 102,\r\n    \"departmentId\": 2,\r\n    \"name\": \"John D\",\r\n    \"age\": 30,\r\n    \"position\": \"Senior Software Engineer\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://host.docker.internal:8060/employee",
+							"protocol": "http",
+							"host": [
+								"host",
+								"docker",
+								"internal"
+							],
+							"port": "8060",
+							"path": [
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://host.docker.internal:8060/department",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://host.docker.internal:8060/department",
+							"protocol": "http",
+							"host": [
+								"host",
+								"docker",
+								"internal"
+							],
+							"port": "8060",
+							"path": [
+								"department"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://host.docker.internal:8060/department",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"name\": \"Finance Department\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://host.docker.internal:8060/department",
+							"protocol": "http",
+							"host": [
+								"host",
+								"docker",
+								"internal"
+							],
+							"port": "8060",
+							"path": [
+								"department"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Department_service",
+			"item": [
+				{
+					"name": "http://localhost:9002/department/with-employees",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9002/department/with-employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9002",
+							"path": [
+								"department",
+								"with-employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": " http://localhost:9002/department/1",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9002/department/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9002",
+							"path": [
+								"department",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9002/department",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"IT Department\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9002/department",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9002",
+							"path": [
+								"department"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Emp_server",
+			"item": [
+				{
+					"name": " http://localhost:9001/employee/department/1",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9001/employee/department/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"employee",
+								"department",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9001/employee/101",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9001/employee/101",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"employee",
+								"101"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": " http://localhost:9001/employee",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9001/employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": " http://localhost:9001/employee",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 101,\r\n    \"departmentId\": 1,\r\n    \"name\": \"John Doe\",\r\n    \"age\": 30,\r\n    \"position\": \"Software Engineer\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"employee"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
